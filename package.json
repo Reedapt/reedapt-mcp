@@ -1,0 +1,45 @@
+{
+  "name": "@reedapt/mcp",
+  "version": "0.1.0",
+  "description": "Reedapt MCP server: dub video and audio into other languages from any AI tool that speaks MCP.",
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "reedapt",
+    "mcp",
+    "dubbing",
+    "translation",
+    "voice"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "reedapt": "^0.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  },
+  "bin": {
+    "reedapt-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "skill"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://docs.reedapt.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reedapt/reedapt-mcp.git"
+  }
+}
