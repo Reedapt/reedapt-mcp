@@ -1,5 +1,5 @@
 {
-  "name": "@reedapt/mcp",
+  "name": "reedapt-mcp",
   "version": "0.1.0",
   "description": "Reedapt MCP server: dub video and audio into other languages from any AI tool that speaks MCP.",
   "scripts": {

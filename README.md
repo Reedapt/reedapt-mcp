@@ -9,7 +9,7 @@ Make an API key under **Developers** in [Reedapt](https://dub.reedapt.com/develo
 **Claude Code**
 
 ```bash
-claude mcp add reedapt --env REEDAPT_API_KEY=rk_test_... -- npx -y @reedapt/mcp
+claude mcp add reedapt --env REEDAPT_API_KEY=rk_test_... -- npx -y reedapt-mcp
 ```
 
 **Claude Desktop, Cursor and other clients** (the `mcpServers` section of the client's config file):
@@ -19,7 +19,7 @@ claude mcp add reedapt --env REEDAPT_API_KEY=rk_test_... -- npx -y @reedapt/mcp
   "mcpServers": {
     "reedapt": {
       "command": "npx",
-      "args": ["-y", "@reedapt/mcp"],
+      "args": ["-y", "reedapt-mcp"],
       "env": { "REEDAPT_API_KEY": "rk_test_..." }
     }
   }
